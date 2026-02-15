@@ -6,6 +6,17 @@ updates:
       - "/sample-function2"
     schedule:
       interval: "daily"
+    groups:
+      esbuild:
+        patterns:
+          - "esbuild*"
+      axios:
+        patterns:
+          - "axios*"
+      lodash:
+        patterns:
+          - "lodash*"
+          - "@types/lodash*"
     ignore:
       - dependency-name: "*"
         update-types:
